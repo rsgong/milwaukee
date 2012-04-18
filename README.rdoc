@@ -6,5 +6,28 @@ Name got its inspiration from a drill my father used to carry around everywhere.
 = Depends
 Depends on jQuery 1.6 +
 
+= Installation
+
+Simply add
+
+  //= require milwaukee
+
+to your application.js and application.css
+
+
+= Effect
+
+Immediately a couple globals are introduced.
+
+  * 'M' is the global namespace for all the milwaukee functions
+
+  * 'l', 'log' are safe shortcuts to console.log
+
+  * 't', 'trace' are safe shortcuts to console.trace
+
+= Docs
+
+See the library itself for inline documentation to all the goodness inside.
+
 
 This project rocks and uses MIT-LICENSE.
