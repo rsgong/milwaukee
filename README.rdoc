@@ -19,11 +19,11 @@ to your application.js and application.css
 
 Immediately a couple globals are introduced.
 
-  * 'M' is the global namespace for all the milwaukee functions
+* 'M' is the global namespace for all the milwaukee functions
 
-  * 'l', 'log' are safe shortcuts to console.log
+* 'l', 'log' are safe shortcuts to console.log
 
-  * 't', 'trace' are safe shortcuts to console.trace
+* 't', 'trace' are safe shortcuts to console.trace
 
 = Docs
 
