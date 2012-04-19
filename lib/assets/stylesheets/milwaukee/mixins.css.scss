@@ -1,0 +1,57 @@
+@mixin border-radius($radius){
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+	-khtml-border-radius: $radius;
+	border-top-left-radius: $radius;
+	border-top-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+	border-bottom-right-radius: $radius;
+}
+
+@mixin two-tone($color1, $color2){
+	background-color:$color1;
+	background-image:-webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(.18, $color1),
+		color-stop(.6, $color2)
+	) !important;
+
+	background-image: -moz-linear-gradient(
+		center top,
+		$color1 18%,
+		$color2 60%
+	) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color1}', endColorstr='#{$color2}', GradientType=0)  !important;
+}
+
+@mixin transparent($hex, $a){
+	/* for IEGR8 */
+	/*
+	$mscolor:30;
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=##{$mscolor}#{$hex},endColorstr=##{$mscolor}#{$hex});
+	 zoom: 1;
+	 background-color: rgba(#{$hex},#{$a});
+	 */
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B0000000,endColorstr=#B0000000);
+	zoom: 1;
+	background-color: rgba($hex,$a);
+}
+
+@mixin box-shadow($xoff, $yoff, $spread, $color){
+	-moz-box-shadow: $xoff $yoff $spread $color;
+	-webkit-box-shadow: $xoff $yoff $spread $color;
+	box-shadow: $xoff $yoff $spread $color;
+}
+
+@mixin no-select{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
