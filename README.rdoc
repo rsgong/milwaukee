@@ -14,6 +14,14 @@ Simply add
 
 to your application.js and application.css
 
+Certain libraries require explicit require statements to keep milmaukee light
+
+  //= require_directory milwaukee/data_structures
+
+or
+
+  //= require_directory milwaukee/data_structures/OrderedList.js
+
 
 = Effect
 
@@ -24,6 +32,14 @@ Immediately a couple globals are introduced.
 * 'l', 'log' are safe shortcuts to console.log
 
 * 't', 'trace' are safe shortcuts to console.trace
+
+= Code Style
+
+Constructor functions are CapCamelCased (HelloThere)
+Library components are lowerCamelCased (helloThere)
+Directories use underscores as spaces (hello_there)
+
+
 
 = Docs
 
