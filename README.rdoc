@@ -40,6 +40,14 @@ Library components are lowerCamelCased (helloThere)
 Directories use underscores as spaces (hello_there)
 
 
+= Other libraries worth pulling in
+
+* jquery: Duh
+* jStorage: Great clientside storage library (even for browsers without local storage)
+* jquery-json: Required for jStorage with Jquery
+* moment.js : Great light, simple date library
+
+
 
 = Docs
 
