@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://timcardenas.com"
   s.summary     = "My personal frontend toolkit"
   s.description = "Provides commonly used js and css components for my projects"
+  s.require_path = 'lib'
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
